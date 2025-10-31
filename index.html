@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 25.2.3.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+  &lt;title&gt;Animal Abuse Complaint Portal&lt;/title&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;family=Roboto&amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+  &lt;style&gt;
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      color: #272c33;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    header {
+      width: 100%;
+      max-width: 900px;
+      text-align: center;
+      padding: 40px 20px 30px;
+      border-bottom: 2px solid #3a82f7;
+      user-select: none;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #0d1a40;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-style: italic;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: #3a82f7;
+      letter-spacing: 0.5px;
+      margin: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background: white;
+      border-radius: 12px;
+      padding: 40px 50px;
+      margin: 30px 0 50px;
+      box-shadow: 0 12px 30px rgba(29,53,87,0.15);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form label {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #2e3a59;
+      margin-top: 20px;
+      user-select: none;
+    }
+    form input, form textarea {
+      margin-top: 8px;
+      padding: 14px 18px;
+      font-size: 1rem;
+      color: #2e3a59;
+      border-radius: 8px;
+      border: 1.8px solid #bcd0f7;
+      background-color: #f7f9fc;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+      font-family: inherit;
+      resize: vertical;
+      min-height: 48px;
+    }
+    form input::placeholder, form textarea::placeholder {
+      color: #9bacd6;
+    }
+    form input:focus, form textarea:focus {
+      border-color: #3a82f7;
+      background-color: white;
+      box-shadow: 0 0 10px #7ea5f5a3;
+      outline: none;
+    }
+    form textarea {
+      min-height: 130px;
+    }
+    form button {
+      margin-top: 30px;
+      background: #3a82f7;
+      color: white;
+      border: none;
+      padding: 16px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 5px 15px rgba(49,121,198,0.4);
+      font-family: 'Montserrat', sans-serif;
+      user-select: none;
+    }
+    form button:hover, form button:focus {
+      background: #255a90;
+      box-shadow: 0 8px 20px rgba(36, 87, 143, 0.7);
+      outline: none;
+    }
+
+    /* Images Section */
+    .animal-images, .abuse-awareness .abuse-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+    }
+    .animal-images img, .abuse-awareness .abuse-images img {
+      width: 140px;
+      height: 95px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(58,101,199,0.25);
+      cursor: default;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .animal-images img:hover, .abuse-awareness .abuse-images img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 32px rgba(27, 63, 191, 0.45);
+      z-index: 10;
+    }
+    .abuse-awareness {
+      margin-top: 20px;
+      max-width: 100%;
+      border-top: 2px solid #d9534f;
+      padding-top: 20px;
+      color: #a94442;
+      font-weight: 600;
+      user-select: none;
+    }
+    .abuse-awareness h2 {
+      color: #d9534f;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .abuse-awareness p {
+      text-align: center;
+      max-width: 400px;
+      margin: 0 auto 25px;
+      font-size: 1rem;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #3179c6;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+      font-style: italic;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+      }
+      .animal-images, .abuse-awareness .abuse-images {
+        justify-content: space-around;
+      }
+      form button {
+        font-size: 1.1rem;
+        padding: 14px;
+      }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;
+  &lt;h1&gt;Stand Against Animal Abuse&lt;/h1&gt;
+  &lt;p&gt;&quot;Be Their Voice, Protect Their Rights&quot;&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+  &lt;form id=&quot;abuseForm&quot; aria-label=&quot;Animal abuse complaint form&quot;&gt;
+    &lt;label for=&quot;name&quot;&gt;Your Name:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;user_name&quot; placeholder=&quot;Enter your full name&quot; required&gt;
+
+    &lt;label for=&quot;email&quot;&gt;Your Email:&lt;/label&gt;
+    &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;user_email&quot; placeholder=&quot;Your email address&quot; required&gt;
+
+    &lt;label for=&quot;complaint&quot;&gt;Complaint Details:&lt;/label&gt;
+    &lt;textarea id=&quot;complaint&quot; name=&quot;message&quot; rows=&quot;6&quot; placeholder=&quot;Describe the abuse incident in detail...&quot; required&gt;&lt;/textarea&gt;
+
+    &lt;button type=&quot;submit&quot;&gt;Submit Complaint&lt;/button&gt;
+  &lt;/form&gt;
+
+  &lt;div&gt;
+    &lt;div class=&quot;animal-images&quot; aria-label=&quot;Images of animals we protect&quot;&gt;
+      &lt;img src=&quot;https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&amp;fit=crop&amp;w=400&amp;q=80&quot; alt=&quot;Compassionate dog looking up&quot; /&gt;
+      &lt;img src=&quot;https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&amp;fit=crop&amp;w=400&amp;q=80&quot; alt=&quot;Peaceful resting cat&quot; /&gt;
+      &lt;img src=&quot;https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&amp;fit=crop&amp;w=400&amp;q=80&quot; alt=&quot;Colorful parrot perched&quot; /&gt;
+      &lt;img src=&quot;https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&amp;fit=crop&amp;w=400&amp;q=80&quot; alt=&quot;Curious bunny in grass&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;section class=&quot;abuse-awareness&quot; aria-label=&quot;Animal abuse awareness&quot;&gt;
+      &lt;h2&gt;Animal Abuse Awareness&lt;/h2&gt;
+      &lt;p&gt;Warning: The following images depict animal abuse. Viewer discretion is advised.&lt;/p&gt;
+      &lt;div class=&quot;abuse-images&quot;&gt;
+        &lt;img src=&quot;https://cdn.pixabay.com/photo/2017/07/31/13/04/animal-2553085_1280.jpg&quot; alt=&quot;Dog chained and neglected&quot; /&gt;
+        &lt;img src=&quot;https://cdn.pixabay.com/photo/2017/01/20/00/30/dog-1994946_1280.jpg&quot; alt=&quot;Injured cat needing help&quot; /&gt;
+        &lt;img src=&quot;https://cdn.pixabay.com/photo/2016/03/27/19/59/dog-1284236_1280.jpg&quot; alt=&quot;Animal rescued from abuse&quot; /&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;
+  Together, we can make a difference for innocent lives.
+&lt;/footer&gt;
+
+&lt;script src=&quot;https://cdn.emailjs.com/dist/email.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  (function(){
+    emailjs.init(&quot;YOUR_USER_ID&quot;); // Replace with your EmailJS user ID
+  })();
+
+  document.getElementById('abuseForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+      .then(() =&gt; {
+        window.location.href = 'thankyou.html';
+      }, (error) =&gt; {
+        alert('Failed to send complaint: ' + error.text);
+      });
+  });
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
