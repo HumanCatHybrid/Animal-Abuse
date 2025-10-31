@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You - Animal Abuse Complaint</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #f0f4ff, #d9e4f5);
+      font-family: 'Roboto', sans-serif;
+      color: #2c3e50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .thank-you-container {
+      background: white;
+      max-width: 720px;
+      padding: 40px 50px 60px;
+      border-radius: 20px;
+      box-shadow: 0 16px 48px rgba(26, 51, 133, 0.16);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+    }
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3.8rem;
+      color: #164285;
+      margin-bottom: 20px;
+      letter-spacing: 0.1em;
+    }
+    p {
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: #3a65c7;
+      margin: 0 0 35px;
+      line-height: 1.4;
+    }
+    a.button-back {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: white;
+      background: #3a65c7;
+      padding: 16px 34px;
+      border-radius: 26px;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(58, 101, 199, 0.35);
+      letter-spacing: 0.05em;
+      transition: background 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
+      display: inline-block;
+    }
+    a.button-back:hover,
+    a.button-back:focus {
+      background: #244a99;
+      transform: translateY(-4px);
+      outline: none;
+      box-shadow: 0 14px 42px rgba(36, 74, 153, 0.55);
+    }
+    .images-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .images-row img {
+      width: 140px;
+      height: 140px;
+      border-radius: 18px;
+      object-fit: cover;
+      box-shadow: 0 12px 30px rgba(58, 101, 199, 0.28);
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+    .images-row img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 16px 40px rgba(27, 63, 191, 0.48);
+      z-index: 10;
+    }
+    .thank-you-container::before {
+      content: "";
+      position: absolute;
+      top: -30%;
+      right: -20%;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle at center, #3a65c7, transparent 70%);
+      filter: blur(60px);
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 0;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-you-container" role="main" aria-label="Thank you message after complaint submission">
+    <h1>Thank You!</h1>
+    <p>Your complaint has been successfully submitted.<br>We deeply appreciate your concern and will review it promptly.</p>
+    <a href="index.html" class="button-back" aria-label="Go back to complaint form">Submit Another Complaint</a>
+
+    <div class="images-row" aria-label="Animals representing care and hope">
+      <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=400&q=80" alt="Tender dog with hopeful eyes">
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Calm cat looking gently">
+      <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80" alt="Resting peaceful dog">
+      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c443f92?auto=format&fit=crop&w=400&q=80" alt="Playful puppy outdoors">
+    </div>
+  </div>
+</body>
+</html>
